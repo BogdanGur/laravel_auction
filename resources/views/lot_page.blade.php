@@ -7,6 +7,9 @@
         <div class="wrapper">
             @if(session('success')) <div class="alert alert-success">{{ session('success') }}</div> @endif
             <div class="lot-container">
+
+                <span class="views">{{ $lot->views }} <i class="fas fa-eye"></i></span>
+
                 <div class="lot-images-block">
                     @if($lot->images)
                         <div class="lot-images">

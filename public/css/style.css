@@ -216,6 +216,7 @@ header nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
+    position: relative;
 }
 .lot-container .lot-images-block {
     width: 40%;
@@ -339,6 +340,11 @@ header nav ul li a:hover {
 .catalog_container .catalog_block .lots_catalog .lot_sec .lot-cat-info h4 a {
     color: #242424;
     text-decoration: none;
+}
+.views {
+    color: #242424;
+    position: absolute;
+    right: 0;
 }
 
 .reset_but {
