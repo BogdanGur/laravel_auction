@@ -1,0 +1,357 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Cairo', sans-serif !important;
+}
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: #d1e5ff;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+header nav ul li {
+    list-style-type: none;
+}
+header nav ul li a {
+    display: inline-block;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #242424;
+    transition: .2s ease;
+}
+header nav ul li a:hover {
+    background: #b3d4ff;
+}
+
+.form-sec h3 {
+    text-align: center;
+}
+.form-sec form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.form-sec form input {
+    margin: 5px 0;
+    height: 30px;
+    line-height: 30px;
+    color: #242424;
+    outline: none;
+    border: 1px solid #242424;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+.form-sec form input[type="file"] {
+    border: 0;
+    height: auto;
+    line-height: inherit;
+}
+.form-sec form input[type="checkbox"] {
+    border: 0;
+    height: auto;
+    line-height: inherit;
+    margin: 0;
+    margin-left: 10px;
+}
+.form-sec form select {
+    margin-top: 10px;
+}
+.form-sec form button {
+    outline: none;
+    background: #242424;
+    border: 1px solid #242424;
+    margin-top: 15px;
+    height: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: .2s ease;
+}
+.form-sec form button:hover {
+    background: #ffffff;
+    color: #242424;
+}
+
+.admin_panel {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.admin_panel .left_panel {
+    border: 1px solid #242424;
+    width: 15%;
+}
+.admin_panel .left_panel .admin {
+    padding: 10px;
+    border-bottom: 1px solid #242424;
+}
+.admin_panel .left_panel ul {
+    margin: 0;
+    padding: 0;
+}
+.admin_panel .left_panel ul li {
+    list-style-type: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+.admin_panel .left_panel ul li:hover {
+    background: #242424;
+    color: #ffffff;
+}
+.admin_panel .right_panel {
+    width: 83%;
+}
+.admin_panel .right_panel .panel_section {
+    display: none;
+    justify-content: space-between;
+}
+.admin_panel .right_panel .panel_section .form_block {
+    width: 50%;
+    -webkit-box-shadow: 0 0 17px -2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 0 17px -2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 0 17px -2px rgba(34, 60, 80, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+.admin_panel .right_panel .panel_section .category_list {
+    width: 50%;
+    -webkit-box-shadow: 0 0 17px -2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 0 17px -2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 0 17px -2px rgba(34, 60, 80, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+}
+.admin_panel .right_panel .panel_section .category_list .cat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #242424;
+    padding: 5px 0;
+}
+.admin_panel .right_panel .panel_section .users_list {
+    width: 100%;
+    -webkit-box-shadow: 0 0 17px -2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 0 17px -2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 0 17px -2px rgba(34, 60, 80, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+}
+.admin_panel .right_panel .panel_section .lot_form {
+    width: 30%;
+    -webkit-box-shadow: 0 0 17px -2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 0 17px -2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 0 17px -2px rgba(34, 60, 80, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+.admin_panel .right_panel .panel_section .lot_form_edit {
+    display: none;
+    width: 100%;
+    margin: 20px 0;
+    -webkit-box-shadow: inset 0 0 17px -2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: inset 0 0 17px -2px rgba(34, 60, 80, 0.2);
+    box-shadow: inset 0 0 17px -2px rgba(34, 60, 80, 0.2);
+}
+.admin_panel .right_panel .panel_section .lot_list {
+    width: 68%;
+    -webkit-box-shadow: 0 0 17px -2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 0 17px -2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 0 17px -2px rgba(34, 60, 80, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+}
+.admin_panel .right_panel .panel_section .users_list .user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #242424;
+    padding: 5px 0;
+}
+.admin_panel .right_panel .panel_section .lot_list .lot {
+    margin-bottom: 20px;
+}
+.admin_panel .right_panel .panel_section .lot_list .lot .lot_info {
+    display: flex;
+}
+.admin_panel .right_panel .panel_section .lot_list .lot .lot_info .lot_image {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+.admin_panel .right_panel .panel_section .lot_list .lot .lot_info .lot_image img {
+    width: 100%;
+}
+.admin_panel .right_panel .panel_section .lot_list .lot .lot_info .lot_name_des {
+    margin-left: 10px;
+}
+.admin_panel .right_panel .panel_section .lot_list .lot .lot_info .lot_name_des p {
+    margin: 0;
+}
+.admin_panel .right_panel .panel_section .lot_list .lot .lot_controll button {
+    width: 100%;
+    margin: 3px 0;
+}
+
+.show_section {
+    display: flex !important;
+}
+
+.lot-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.lot-container .lot-images-block {
+    width: 40%;
+}
+.lot-container .lot-images-block .lot-images {
+    display: flex;
+    align-items: center;
+}
+.lot-container .lot-images-block .lot-images .lot-image {
+    width: 300px;
+}
+.lot-container .lot-images-block .lot-images .lot-image img {
+    width: 100%;
+}
+.lot-container .lot-info-block {
+    width: 50%;
+}
+.lot-container .lot-info-block .lot_price_bet {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+.lot-container .lot-info-block .lot_price_bet .lot_bet_price {
+    margin-left: 30px;
+}
+.lot-container .lot-info-block .lot_price_bet .lot_bet_price input{
+    width: 80px;
+}
+.lot-container .lot-info-block .lot_price_bet .lot_bet_price button {
+    outline: none;
+    border: 1px solid #242424;
+    background: #242424;
+    color: #ffffff;
+    padding: 2px 10px;
+    border-radius: 3px;
+    transition: .2s ease;
+}
+.lot-container .lot-info-block .lot_price_bet .lot_bet_price button:hover {
+    color: #242424;
+    background: #ffffff;
+}
+.lot-container .lot-info-block .lot_bet_list {
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    -webkit-box-shadow: inset 0 0 10px -2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: inset 0 0 10px -2px rgba(34, 60, 80, 0.2);
+    box-shadow: inset 0 0 10px -2px rgba(34, 60, 80, 0.2);
+    height: 200px;
+    overflow: auto;
+}
+.lot-container .lot-info-block .lot_bet_list::-webkit-scrollbar {
+    display: none;
+}
+.lot-container .lot-info-block .lot_bet_list .lot_bet {
+    height: 30px;
+    line-height: 30px;
+    background: #dff3ff;
+    margin: 10px 0;
+    padding: 0 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.lot-container .lot-info-block .lot_bet_list .lot_bet .user_bet {
+    color: #34af1d;
+    font-weight: 700;
+}
+
+.catalog_container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.catalog_container .filter_block {
+    width: 15%;
+    -webkit-box-shadow: 0 0 17px -2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 0 17px -2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 0 17px -2px rgba(34, 60, 80, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+.catalog_container .filter_block h4 {
+
+}
+.catalog_container .filter_block form {
+    display: flex;
+    flex-direction: column;
+}
+.catalog_container .filter_block form span {
+
+}
+.catalog_container .catalog_block {
+    width: 83%;
+}
+.catalog_container .catalog_block .lots_catalog {
+    display: flex;
+    flex-wrap: wrap;
+}
+.catalog_container .catalog_block .lots_catalog .lot_sec {
+    -webkit-box-shadow: 0 0 17px -2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 0 17px -2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 0 17px -2px rgba(34, 60, 80, 0.2);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 30.33%;
+}
+.catalog_container .catalog_block .lots_catalog .lot_sec .lot-cat-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.catalog_container .catalog_block .lots_catalog .lot_sec .lot-cat-img img {
+    width: 100%;
+}
+.catalog_container .catalog_block .lots_catalog .lot_sec .lot-cat-info {
+    margin-top: 10px;
+}
+.catalog_container .catalog_block .lots_catalog .lot_sec .lot-cat-info h4 a {
+    color: #242424;
+    text-decoration: none;
+}
+
+.reset_but {
+    background: #dc3545;
+    color: #ffffff;
+    text-decoration: none;
+    width: 100%;
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.reset_but:hover {
+    background: #e34655;
+    color: #ffffff;
+}
